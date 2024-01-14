@@ -2,6 +2,9 @@
   width: 100%;
 }
 .nav-container {
+  display: none;
+}
+.nav-menu-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,6 +12,12 @@
   max-width: 1400px;
   padding: 1.5rem 1rem;
   margin: 0 auto;
+}
+.nav-logo {
+  height: 40px;
+  width: 176px;
+  object-fit: contain;
+  cursor: pointer;
 }
 .nav-items {
   display: flex;
@@ -18,7 +27,14 @@
   font-size: 18px;
   font-weight: 500;
 }
-
+.nav-items li {
+  color: #000;
+  transition: all ease-in 0.3s;
+  cursor: pointer;
+}
+.nav-items li:hover {
+  color: #5515a6;
+}
 .nav-btn button {
   display: flex;
   gap: 0.3rem;
@@ -26,4 +42,19 @@
   background: none;
   border: none;
   font-size: 18px;
+}
+
+@media screen and (min-width: 1080px) {
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
+    padding: 1.5rem 1rem;
+    margin: 0 auto;
+  }
+  .nav-menu-container {
+    display: none;
+  }
 }
