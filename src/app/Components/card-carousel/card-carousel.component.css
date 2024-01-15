@@ -1,0 +1,9 @@
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+app-card {
+  flex: 0 0 100%;
+}

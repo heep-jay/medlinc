@@ -1,0 +1,120 @@
+.footer {
+  padding: 3rem 1rem;
+}
+.footer-row {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); */
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 8rem;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.footer-logo {
+  width: 176px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-column h5 {
+  font-size: clamp(0.9375rem, 0.7031rem + 0.75vw, 1.125rem);
+  color: #888787;
+  font-weight: 400;
+}
+
+.footer-column ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: clamp(0.8125rem, 0.6563rem + 0.5vw, 0.9375rem);
+  /* margin-left: 8px; */
+}
+
+.footer-column ul li {
+  cursor: pointer;
+  transition: all ease-in 0.3s;
+}
+.footer-column ul li:hover {
+  color: #5515a6;
+}
+
+.footer-onboarding {
+  border-radius: 30px;
+  background: rgba(85, 21, 166, 0.07);
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: fit-content;
+}
+.footer-onboarding p {
+  font-size: clamp(1.125rem, 0.6563rem + 1.5vw, 1.5rem);
+  font-weight: 500;
+  color: #5515a6;
+}
+.waitlist {
+  display: flex;
+  border-radius: 29.397px;
+  border: 1px solid #888787;
+  background: #fff;
+  padding: 0.5rem 0.7rem;
+  width: fit-content;
+}
+.waitlist-input {
+  outline: none;
+  background: none;
+  border: none;
+}
+.waitlist-btn {
+  font-size: 12px;
+  color: #fff;
+  white-space: nowrap;
+  padding: 0.5rem 0.8rem;
+  border-radius: 20px;
+  border: none;
+  background: #5515a6;
+  cursor: pointer;
+}
+.hr {
+  width: 100%;
+  max-width: 1400px;
+  margin: 3rem auto;
+}
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  margin-top: -2rem;
+  font-weight: 600;
+  color: #888787;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .footer-row {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+  .footer-column ul li,
+  h5 {
+    text-align: center;
+  }
+  .footer-onboarding p {
+    text-align: center;
+  }
+}

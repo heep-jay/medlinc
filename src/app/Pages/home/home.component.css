@@ -1,5 +1,5 @@
 .home {
-  padding: 7rem 0;
+  padding: 7rem 0 0;
   width: 100%;
 }
 
@@ -7,7 +7,7 @@
 .trusted,
 .search {
   width: 100%;
-  padding: 3rem 1rem;
+  padding: 5rem 1rem;
 
   max-width: 1400px;
   margin: 0 auto;
@@ -125,4 +125,103 @@
   margin-top: 2rem;
   width: 100%;
   max-width: 1000px;
+}
+
+.testimonials {
+  width: 100%;
+  background: url("/assets/images/bg.png"),
+    linear-gradient(rgba(0, 119, 182, 0.56), rgba(0, 119, 182, 0.56));
+  min-height: 600px;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
+}
+.testimonials-container {
+  width: 90%;
+  min-width: 300px;
+  max-width: 1400px;
+  padding: 3rem 1rem;
+  margin: 0 auto;
+}
+.testimonial-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.testimonial-pill {
+  padding: 0.5rem 2rem;
+  border-radius: 28px;
+
+  background: #fff;
+  width: fit-content;
+}
+.testimonial-pill p {
+  font-size: clamp(0.875rem, 0.5625rem + 1vw, 1.125rem);
+}
+
+.testimonials-box {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+.testimonial-text {
+  font-size: clamp(1.125rem, -0.2813rem + 4.5vw, 2.25rem);
+  max-width: 500px;
+  text-align: justify;
+}
+
+.testimonial {
+  border-radius: 12px;
+  background: linear-gradient(
+    121deg,
+    #fff -3.19%,
+    rgba(255, 255, 255, 0) 149.26%
+  );
+  backdrop-filter: blur(40px);
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 63px;
+  flex-shrink: 0;
+  text-align: center;
+  padding: 2rem;
+}
+.testimonial p {
+  font-size: clamp(0.8125rem, 0.5781rem + 0.75vw, 1rem);
+}
+.testimonial-one {
+  width: 100%;
+  max-width: 647px;
+  height: 564px;
+}
+.testimonial-two {
+  width: 100%;
+  max-width: 542.608px;
+  height: 473px;
+}
+
+@media screen and (max-width: 500px) {
+  .testimonial-one {
+    width: 100%;
+    max-width: 647px;
+    height: auto;
+  }
+  .testimonial-two {
+    width: 100%;
+
+    height: auto;
+  }
+
+  .waitlist-btn {
+    padding: 1rem;
+    font-size: 12px;
+    flex: 0.4;
+  }
+  .waitlist-input {
+    flex: 0.6;
+  }
 }
